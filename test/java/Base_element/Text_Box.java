@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 public class Text_Box {
     public WebDriver driver;
     public JavascriptExecutor javascriptExecutor;
-    public String pageUrl = "https://demoqa.com/text-box";
+    public String pageTextBoxUrl = "https://demoqa.com/text-box";
     public long timeWait = 3000;
 
     // element in website
@@ -54,7 +54,7 @@ public class Text_Box {
         javascriptExecutor = (JavascriptExecutor) driver;
 
         driver.manage().window().maximize();
-        driver.get(pageUrl);
+        driver.get(pageTextBoxUrl);
     }
     @Test
     public void TC_01_InputIntoTextBox(){
